@@ -190,8 +190,15 @@
         right: -340px;
         width: 340px;
     }
+
+    #logo{
+        height: 75px !important;
+    }
 }
 
+#logo{
+    height: 100px;
+}
 .logo-container img {
     max-height: 150px;
     height: auto;
@@ -324,3 +331,5 @@
     border: none;
     border-radius: 5px;
 }
+
+
