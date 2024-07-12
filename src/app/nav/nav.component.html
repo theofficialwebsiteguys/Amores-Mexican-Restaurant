@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" #navbar>
+    <div class="container-fluid">
+      <!-- Navbar toggler button -->
+      <button class="navbar-toggler order-1 mt-4" type="button" (click)="toggleMobileMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Left side links -->
+      <div class="collapse navbar-collapse justify-content-end order-1" id="navbarScrollLeft">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item" (click)="closeMenu()">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item" (click)="closeMenu()">
+            <a class="nav-link" routerLink="/shop" routerLinkActive="active">Gallery</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Center logo -->
+      <a class="navbar-brand mx-auto order-2" routerLink="/home">
+        <img src="assets/logo.png" id="logo" height="100" alt="Logo Description" />
+      </a>
+  
+      <!-- Right side links -->
+      <div class="collapse navbar-collapse justify-content-start order-3 rs" id="navbarScrollRight">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item" (click)="closeMenu()">
+            <a class="nav-link" routerLink="/games" routerLinkActive="active">Menu</a>
+          </li>
+          <li class="nav-item" (click)="closeMenu()">
+            <a class="nav-link" routerLink="/blog" routerLinkActive="active">Catering</a>
+          </li>
+          <!-- <button class="btn btn-primary">Order Online</button> -->
+        </ul>
+      </div>
+  
+      <!-- Slide-in menu for smaller screens -->
+      <div class="slide-in-menu" [class.active]="mobileMenuActive">
+        <div class="slide-in-menu-content">
+          <!-- Close button -->
+          <button class="close-button" (click)="closeMenu()">×</button>
+  
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item" (click)="closeMenu()">
+              <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item" (click)="closeMenu()">
+              <a class="nav-link" routerLink="/shop" routerLinkActive="active">Gallery</a>
+            </li>
+            <li class="nav-item" (click)="closeMenu()">
+              <a class="nav-link" routerLink="/contact" routerLinkActive="active">Menu</a>
+            </li>
+            <li class="nav-item" (click)="closeMenu()">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active">Catering</a>
+              </li>
+            
+          </ul>
+  
+          <div class="container slide-footer text-center">
+            <img src="assets/logo.png" id="logo" height="100" alt="Logo Description" />
+            <p class="text-dark mt-3">165 Pleasant St #3, Marblehead, MA 01945</p>
+            <section class="m-4">
+              <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook"></i></a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
