@@ -1,0 +1,110 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+.menu-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto;
+}
+
+.menu-image {
+    margin: 10px;
+    width: 100%;
+}
+
+.menu-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    border-radius: 8px; /* Optional: add some border radius for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+}
+
+@media (min-width: 768px) {
+    .menu-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-image {
+        flex: 1 1 calc(50% - 20px); /* Two images per row with some margin */
+        margin: 10px;
+    }
+}
+
+  
+
+  .footer-container {
+    background-color: #f9f9f9;
+    padding-top: 100px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .map-container {
+    width: 50%;
+    height: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .map-container {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  
+  .restaurant-info {
+    width: 50%;
+    padding: 20px;
+    height: 400px;
+    background-color: #A92224;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .restaurant-info {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+  }
+  
+  .restaurant-info h2 {
+    margin-top: 0;
+  }
+  
+  .footer-details {
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .footer-details p {
+    margin: 0;
+    font-size: 14px;
+  }

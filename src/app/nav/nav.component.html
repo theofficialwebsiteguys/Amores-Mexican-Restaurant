@@ -9,16 +9,16 @@
       <div class="collapse navbar-collapse justify-content-end order-1" id="navbarScrollLeft">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item" (click)="closeMenu()">
-            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+            <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
           </li>
           <li class="nav-item" (click)="closeMenu()">
-            <a class="nav-link" routerLink="/shop" routerLinkActive="active">Gallery</a>
+            <a class="nav-link" routerLink="/gallery" routerLinkActive="active">Gallery</a>
           </li>
         </ul>
       </div>
   
       <!-- Center logo -->
-      <a class="navbar-brand mx-auto order-2" routerLink="/home">
+      <a class="navbar-brand mx-auto order-2" routerLink="/">
         <img src="assets/logo.png" id="logo" alt="Logo Description" />
       </a>
   
@@ -26,10 +26,10 @@
       <div class="collapse navbar-collapse justify-content-start order-3 rs" id="navbarScrollRight">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item" (click)="closeMenu()">
-            <a class="nav-link" routerLink="/games" routerLinkActive="active">Menu</a>
+            <a class="nav-link" routerLink="/menu" routerLinkActive="active">Menu</a>
           </li>
           <li class="nav-item" (click)="closeMenu()">
-            <a class="nav-link" routerLink="/blog" routerLinkActive="active">Catering</a>
+            <a class="nav-link" routerLink="/catering" routerLinkActive="active">Catering</a>
           </li>
           <!-- <button class="btn btn-primary">Order Online</button> -->
         </ul>
@@ -45,9 +45,9 @@
             <li class="nav-item" (click)="closeMenu()">
               <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
             </li>
-            <li class="nav-item" (click)="closeMenu()">
+            <!-- <li class="nav-item" (click)="closeMenu()">
               <a class="nav-link" routerLink="/shop" routerLinkActive="active">Gallery</a>
-            </li>
+            </li> -->
             <li class="nav-item" (click)="closeMenu()">
               <a class="nav-link" routerLink="/contact" routerLinkActive="active">Menu</a>
             </li>

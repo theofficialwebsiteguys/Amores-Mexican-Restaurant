@@ -1,13 +1,7 @@
-<div class="app-container" #appContainer>
-  <div class="overlay" #overlay></div>
-  <nav *ngIf="!isLandingPage" class="navbar navbar-expand-lg navbar-light fixed-top" [class.scrolled]="!isHomePage && scrolled">
-    <app-nav></app-nav>
-  </nav>
+<app-nav></app-nav>
+<app-hero></app-hero>
+<router-outlet></router-outlet>
 
-  <div *ngIf="!isLandingPage" [class.hero-container]="true" [class.with-video]="isHomePage" [class.shrink]="!isHomePage" [class.black-bg]="!isHomePage && scrolled">
-    <app-hero></app-hero>
+<div class="footer-details">
+    <p>©2024 by Amores Mexican Restaurant</p>
   </div>
-  
-
-  <router-outlet></router-outlet>
-</div>
