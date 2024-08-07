@@ -17,6 +17,28 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    background-size: auto 100%; /* Ensure image fits height, auto-adjust width */
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 90vh;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 80vh;
+    background-size: cover;
+  }
+}
+
+
 .remove{
   display: none;
 }
