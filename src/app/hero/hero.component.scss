@@ -7,6 +7,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: height 0.5s ease; /* Smooth transition for height change */
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(39, 39, 39, 0.6); /* Overlay to darken the image */
+  z-index: 1; /* Lower than the text but higher than the image */
+}
+
+.hero-container.hero-container-shrunk {
+  height: 20vh; /* Adjust the height as needed for the shrunk state */
 }
 
 .hero-content {
@@ -22,27 +38,10 @@
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Optional: Adds readability to text */
 }
 
-.hero-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(39, 39, 39, 0.6); /* Overlay to darken the image */
-  z-index: 1; /* Lower than the text but higher than the image */
-}
-
 .hero-content * {
   position: relative;
   z-index: 2; /* Higher than the overlay */
 }
-
-// #logo {
-//   max-height: 400px;
-//   content: url('../../assets/limited-hype-logo.png');
-//   padding: 30px;
-// }
 
 .quotes-btn {
   background-color: #cac7ff;
